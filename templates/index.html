@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>LumiStock - Painel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center mt-3">LumiStock - Gestão de Estoque</h1>
+        </header>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <a href="/cadastro" class="btn btn-primary btn-lg btn-block">Cadastrar Produto</a>
+            </div>
+            <div class="col-md-4">
+                <a href="/orcamento" class="btn btn-success btn-lg btn-block">Gerar Orçamento</a>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-info btn-lg btn-block">Ver Estoque</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
